@@ -102,4 +102,6 @@ public class SupllierStepClass extends TestBase{
 	public void click_on_Booking_Link() {
 		supllierhome.setBookingLInk();
 	}
+	
+
 }

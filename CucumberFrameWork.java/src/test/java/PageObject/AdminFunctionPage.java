@@ -47,6 +47,7 @@ public class AdminFunctionPage {
 		for(int i=0;i<invoiceList.size();i++) {	
 			Thread.sleep(1000);
 			invoiceList.get(i).click();	
+			
 		}
 	}
 	public void switchtoinvoice() throws InterruptedException {

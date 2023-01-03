@@ -80,6 +80,10 @@ public class SupllierHomePage {
 	WebElement hotelLink;
 	@FindBy(css = "a[aria-controls='toursmodule']")
 	WebElement toursLink;
+	@FindBy(css = "a[aria-controls='flightsmodule']")
+	WebElement flightLink;
+	@FindBy(css = "a[aria-controls='visamodule']")
+	WebElement visaLink;
 	@FindBy(css = "a[class='loadeffect nav-link collapsed mdc-ripple-upgraded']")
 	WebElement bookingLink;
 
@@ -99,5 +103,10 @@ public class SupllierHomePage {
 	public void setBookingLInk() {
 		bookingLink.click();
 	}
-
+	public void setFlightLInk() {
+		flightLink.click();
+	}
+	public void setVisaLInk() {
+		visaLink.click();
+	}
 }

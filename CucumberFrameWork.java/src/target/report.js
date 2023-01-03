@@ -122,8 +122,7 @@ formatter.match({
   "location": "StepDefinition.SupllierStepClass.supllier_message_will_show()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat StepDefinition.SupllierStepClass.supllier_message_will_show(SupllierStepClass.java:46)\r\n\tat ✽.Display error message(file:///D:/01rose_trainingdocument/Cucumber/CucumberFrameWork.java/src/test/resources/Features/supllierlogin.feature:16)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "close the Supllier browser",
@@ -133,6 +132,6 @@ formatter.match({
   "location": "StepDefinition.SupllierStepClass.close_the_Supllier_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });
