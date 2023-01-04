@@ -87,16 +87,17 @@ public class CustomerHomePage {
   		Thread.sleep(1000);
 		updateButton.click();
 	}
-	
+	@FindBy(css = "table[class='table  text-center']")
+	WebElement table;
 	public void clickAllVoucher() throws InterruptedException {
 		String oldtab = driver.getWindowHandle();
 		Thread.sleep(2000);
+		
 		List<WebElement> listVoucher = driver.findElements(By.xpath("//div[@class='table-content']//a"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", table);
 		for(int i=0;i<listVoucher.size();i++) {
-			
-			js.executeScript("arguments[0].scrollIntoView();", listVoucher.get(i));
-			Thread.sleep(2000);
+		Thread.sleep(2000);
 				listVoucher.get(i).click();	
 				driver.switchTo().window(oldtab);
 		}

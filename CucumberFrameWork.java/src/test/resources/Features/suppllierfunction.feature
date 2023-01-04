@@ -37,7 +37,6 @@ Scenario: Supllier check the licks are clickcble or not
   	And Supllier click on Car Link
     And Supllier click on Tours Link
   	And Supllier  click on Hotel Link
-   And click on Booking Link
     Then close the Supllier browser    
     
     

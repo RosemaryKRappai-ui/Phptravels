@@ -29,7 +29,7 @@ public class SupllierHomePage {
 	}
 
 	public void displayrevenue() {
-		Assert.assertTrue(driver.getPageSource().contains("Revenue Breakdown 2022"));
+		Assert.assertTrue(driver.getPageSource().contains("Revenue Breakdown 2023"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", revenuechart);
 	}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="24" failures="0" name="StepDefinition.TestRunner" time="439.349" errors="0" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="strip"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.3.1+2-LTS-6"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\01rose_trainingdocument\Cucumber\CucumberFrameWork.java"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\01rose_trainingdocument\Cucumber\CucumberFrameWork.java"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.3.1+2-LTS-6"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\JINTOS~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="D:\01rose_trainingdocument\Cucumber\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15743188951370364512.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\JINTO SEBASTIAN\AppData\Local\Microsoft\WindowsApps;C:\Users\JINTO SEBASTIAN\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\JINTO SEBASTIAN"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="JINTO SEBASTIAN"/>
+    <property name="java.class.path" value="C:\Users\JINTO SEBASTIAN\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.3.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.3.1"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\01rose_trainingdocument\Cucumber\CucumberFrameWork.java\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="To test Admin functionality" name="Admin change the status pending to confirmed" time="21.788"/>
+  <testcase classname="To test Admin functionality" name="Display booking invoice where payment is successfull." time="18.173"/>
+  <testcase classname="To test Admin functionality" name="Admin Delete the cancelled pyment" time="18.851"/>
+  <testcase classname="To test Admin functionality" name="Admin click on Website Link" time="38.254"/>
+  <testcase classname="To test Admin login functionality" name="Admin login is successfull with valid data" time="11.872"/>
+  <testcase classname="To test Admin login functionality" name="Admin login is successfull with valid data" time="6.589"/>
+  <testcase classname="To test the Agent functions" name="Agent Searching the hotel in the city" time="19.918"/>
+  <testcase classname="To test the Agent functions" name="Agent update the USD TO INR" time="20.946"/>
+  <testcase classname="To test the Agent functions" name="Agent click on main tabs" time="16.327"/>
+  <testcase classname="To test the Agent functions" name="Agent click on all links" time="37.464"/>
+  <testcase classname="To test Customer login functionality" name="Check login is successfull with valid data" time="10.794"/>
+  <testcase classname="To test Customer login functionality" name="Check login is successfull with valid data" time="13.034"/>
+  <testcase classname="Customer functions" name="check the customer main Links and functionality" time="30.891"/>
+  <testcase classname="Customer functions" name="check My Booking" time="40.119"/>
+  <testcase classname="Customer functions" name="check payment using paypal" time="24.02"/>
+  <testcase classname="Customer functions" name="check My Profile Upadte" time="18.675"/>
+  <testcase classname="To test Customer login functionality" name="Check login is successfull with valid data" time="10.168"/>
+  <testcase classname="To test Customer login functionality" name="Check login is successfull with invalid data" time="13.757"/>
+  <testcase classname="To test Supllier login functionality" name="Supllier login is successfull with valid data" time="10.593"/>
+  <testcase classname="To test Supllier login functionality" name="Supllier login is successfull with invalid credentials" time="8.286"/>
+  <testcase classname="Test the Supplier Functionalities" name="Supllier check the text &quot;Sales overview and summary&quot;" time="10.712"/>
+  <testcase classname="Test the Supplier Functionalities" name="Supllier check the text Revenue Breakdown" time="9.298"/>
+  <testcase classname="Test the Supplier Functionalities" name="Supllier change the pending to confirmed status" time="15.887"/>
+  <testcase classname="Test the Supplier Functionalities" name="Supllier check the licks are clickcble or not" time="12.933"/>
+</testsuite>
