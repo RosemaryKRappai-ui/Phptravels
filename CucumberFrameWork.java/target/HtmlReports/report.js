@@ -4,10 +4,10 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Admin change the status pending to confirmed",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Admin launch the browser",
@@ -58,6 +58,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Admin change the status pending to confirmed",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Admin click on pending pyamentButton",
@@ -109,10 +114,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Display booking invoice where payment is successfull.",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Admin launch the browser",
@@ -163,6 +168,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Display booking invoice where payment is successfull.",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Admin click on paid pyamentButton",
@@ -204,10 +214,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Admin Delete the cancelled pyment",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Admin launch the browser",
@@ -258,6 +268,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Admin Delete the cancelled pyment",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Admin click on cancelled pyamentButton",
@@ -299,10 +314,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Admin click on Website Link",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Admin launch the browser",
@@ -353,6 +368,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Admin click on Website Link",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Admin click on \"Website\" link",
@@ -1159,7 +1179,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.background({
-  "name": "commen step",
+  "name": "common step",
   "description": "",
   "keyword": "Background"
 });
@@ -1199,26 +1219,6 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "click on My Booking",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinition.CutomerStepsClass.click_on_My_Booking()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "launch the Mybooking page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinition.CutomerStepsClass.launch_the_Mybooking_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "click on Add Funds",
   "keyword": "When "
 });
@@ -1239,6 +1239,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "check add funds functionality",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinition.CutomerStepsClass.check_add_funds_functionality()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "click on My Profile",
   "keyword": "When "
 });
@@ -1254,6 +1264,46 @@ formatter.step({
 });
 formatter.match({
   "location": "StepDefinition.CutomerStepsClass.launch_the_My_Profile()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "check My profile functionality",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinition.CutomerStepsClass.check_My_profile_functionality()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on My Booking",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinition.CutomerStepsClass.click_on_My_Booking()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "launch the Mybooking page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.CutomerStepsClass.launch_the_Mybooking_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "check Mybooking functionality",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinition.CutomerStepsClass.check_Mybooking_functionality()"
 });
 formatter.result({
   "status": "passed"
@@ -1289,7 +1339,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.background({
-  "name": "commen step",
+  "name": "common step",
   "description": "",
   "keyword": "Background"
 });
@@ -1369,7 +1419,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.background({
-  "name": "commen step",
+  "name": "common step",
   "description": "",
   "keyword": "Background"
 });
@@ -1459,7 +1509,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.background({
-  "name": "commen step",
+  "name": "common step",
   "description": "",
   "keyword": "Background"
 });
@@ -1826,10 +1876,10 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Supllier check the text \"Sales overview and summary\"",
+formatter.background({
+  "name": "common steps",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Supllier launch the browser",
@@ -1870,6 +1920,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Supllier check the text \"Sales overview and summary\"",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "launch the Supllier Dashboard",
@@ -1901,10 +1956,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Supllier check the text Revenue Breakdown",
+formatter.background({
+  "name": "common steps",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Supllier launch the browser",
@@ -1945,6 +2000,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Supllier check the text Revenue Breakdown",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "launch the Supllier Dashboard",
@@ -1976,10 +2036,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Supllier change the pending to confirmed status",
+formatter.background({
+  "name": "common steps",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Supllier launch the browser",
@@ -2020,6 +2080,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Supllier change the pending to confirmed status",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Supplier click on Pending status",
@@ -2071,10 +2136,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Supllier check the licks are clickcble or not",
+formatter.background({
+  "name": "common steps",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Background"
 });
 formatter.step({
   "name": "Supllier launch the browser",
@@ -2115,6 +2180,11 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "Supllier check the links are clickcble or not",
+  "description": "",
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "Supllier click on Car Link",

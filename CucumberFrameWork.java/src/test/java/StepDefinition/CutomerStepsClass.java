@@ -72,7 +72,10 @@ public class CutomerStepsClass extends TestBase {
 	public void launch_the_Mybooking_page() {
 		Assert.assertTrue(driver.getPageSource().contains("My Bookings"));
 	}
-
+	@Then("check Mybooking functionality")
+	public void check_Mybooking_functionality() throws InterruptedException {
+		customerHome.clickAllVoucher();
+	}
 	@When("click on Add Funds")
 	public void click_on_Add_Funds() {
 		customerHome = new CustomerHomePage(driver);
@@ -83,11 +86,17 @@ public class CutomerStepsClass extends TestBase {
 	public void launch_the_Add_Funds() {
 		Assert.assertTrue(driver.getPageSource().contains("Payment Method")); 
 	}
+	@Then("check add funds functionality")
+	public void check_add_funds_functionality() throws InterruptedException {
+		customerHome = new CustomerHomePage(driver);
+		  customerHome.checkAllgateway();
+		  
+	}
 
 	@When("click on My Profile")
 	public void click_on_My_Profile() {
 		customerHome = new CustomerHomePage(driver);
-	  customerHome.setmyProfile();
+	    customerHome.setmyProfile();
 	}
 
 	@Then("launch the My Profile")
@@ -95,6 +104,12 @@ public class CutomerStepsClass extends TestBase {
 		Assert.assertTrue(driver.getPageSource().contains("Profile Information"));
 	}
 
+	@Then("check My profile functionality")
+	public void check_My_profile_functionality() throws InterruptedException {
+		customerHome.setfeilds();
+		customerHome.setupdate();
+		Assert.assertTrue(driver.getPageSource().contains("Profile updated successfully."));
+	}
 	@When("click Logout")
 	public void click_Logout() {
 		customerHome = new CustomerHomePage(driver);

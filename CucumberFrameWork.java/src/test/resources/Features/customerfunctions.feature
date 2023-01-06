@@ -1,17 +1,19 @@
 Feature: Customer functions
-
- Background: commen step
+ Background: common step
     Given user launch the browser 
     And enter the url "https://www.phptravels.net/login"
     And  User enter valid username "user@phptravels.com" and password "demouser"
 
 Scenario: check the customer main Links and functionality
-    When click on My Booking
-    Then launch the Mybooking page
     When click on Add Funds
-    Then launch the Add Funds
+    Then launch the Add Funds	
+    And check add funds functionality
     When click on My Profile
     Then launch the My Profile
+    And check My profile functionality
+    When click on My Booking
+    Then launch the Mybooking page
+    And check Mybooking functionality
    	When click Logout
     Then launch the Login page
     And close the browser

@@ -47,7 +47,24 @@ public class CustomerHomePage {
 	WebElement paybutton;
 	@FindBy(css = "div[class='paypal-button-label-container'] img")
 	WebElement paypalButton;
-	
+	@FindBy(css = "input#gateway_stripe")
+	WebElement gateway_stripe;
+	@FindBy(css = "input#gateway_razorpay")
+	WebElement gatewayrazorpay;
+	@FindBy(css = "input#gateway_bank-transfer")
+	WebElement banktransfer;
+	public void checkAllgateway() throws InterruptedException {
+		
+		gatewayrazorpay.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+  		js.executeScript("arguments[0].scrollIntoView();", gateway_stripe);
+  		Thread.sleep(1000);
+		gateway_stripe.click();
+  		js.executeScript("arguments[0].scrollIntoView();", paypal);
+  		Thread.sleep(1000);
+   	    paypal.click();
+		banktransfer.click();
+	}
 	public void selectpaypal() throws InterruptedException{
 			Thread.sleep(3000);
 	  		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -64,13 +81,26 @@ public class CustomerHomePage {
 		Thread.sleep(2000);
   		return driver.getTitle();
 	}
-	
+	@FindBy(css = "input[name='firstname']")
+	WebElement firstname;
+	@FindBy(css = "input[name='lastname']")
+	WebElement lastname;
+	@FindBy(css = "input[name='phone']")
+	WebElement phone;
 	@FindBy(css = "input[name='address1']")
 	WebElement address1;
 	@FindBy(css = "input[name='address2']")
 	WebElement address2;
 	@FindBy(css = "button[type='submit']")
 	WebElement updateButton;
+	public void setfeilds() {
+		firstname.clear();
+		firstname.sendKeys("Rahul");
+		lastname.clear();
+		lastname.sendKeys("Babu");
+		phone.clear();
+		phone.sendKeys("772194292");
+	}
 	public void setaddress(String addres1,String addres2) throws InterruptedException{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
   		js.executeScript("arguments[0].scrollIntoView();", updateButton);
@@ -97,7 +127,7 @@ public class CustomerHomePage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", table);
 		for(int i=0;i<listVoucher.size();i++) {
-		Thread.sleep(2000);
+				Thread.sleep(2000);
 				listVoucher.get(i).click();	
 				driver.switchTo().window(oldtab);
 		}
